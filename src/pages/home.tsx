@@ -12,7 +12,7 @@ interface HomeProps {
 const galleryImages = [
   { src: "/gimnasio.jpg", alt: "Freedom Interior" },
   { src: "/instalaciones.jpg", alt: "Sala Principal WOD" },
-  { src: "/hiit.jpg", alt: "Zona Hyrox" },
+  { src: "/hiit.jpg", alt: "Zona Freerox" },
   { src: "/ergs.jpg", alt: "Zona Open Box" },
   { src: "/metros.jpg", alt: "+1000 m² Indoor" },
   { src: "/descanso.jpg", alt: "Freedom Rest Zone" },
@@ -21,7 +21,7 @@ const galleryImages = [
 export default function home({ activeDiscipline, setActiveDiscipline, brandColor }: HomeProps) {
   const [showModal, setShowModal] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState<number | null>(null);
-  const isCrossfit = activeDiscipline === "Crossfit";
+  const isCrossfit = activeDiscipline === "CrossTraining";
   const [mensajePopup, setMensajePopup] = useState<string | null>(null);
 
   const handleReservaSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -98,20 +98,20 @@ export default function home({ activeDiscipline, setActiveDiscipline, brandColor
 
           <div className="inline-flex items-center bg-black/60 backdrop-blur-md p-1.5 rounded-full border border-white/10 mb-8 shadow-2xl pointer-events-auto">
             <button
-              onClick={() => setActiveDiscipline("Crossfit")}
+              onClick={() => setActiveDiscipline("CrossTraining")}
               className={`px-8 py-3 rounded-full font-black text-sm uppercase tracking-wider transition-all duration-300 ${
                 isCrossfit ? "bg-[#A855F7] text-white shadow-lg shadow-purple-500/30 scale-105" : "text-gray-400 hover:text-white"
               }`}
             >
-              CrossFit
+              CrossTraining
             </button>
             <button
-              onClick={() => setActiveDiscipline("Hyrox/Hiit")}
+              onClick={() => setActiveDiscipline("Freerox/Hiit")}
               className={`px-8 py-3 rounded-full font-black text-sm uppercase tracking-wider transition-all duration-300 ${
                 !isCrossfit ? "bg-[#38BDF8] text-white shadow-lg shadow-sky-500/30 scale-105" : "text-gray-400 hover:text-white"
               }`}
             >
-              Hyrox / HIIT
+              Freerox / HIIT
             </button>
           </div>
 
@@ -168,7 +168,7 @@ export default function home({ activeDiscipline, setActiveDiscipline, brandColor
               >
                 <img 
                   src="/hiit.jpg" 
-                  alt="Zona Hyrox" 
+                  alt="Zona Freerox" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-90"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#181822] to-transparent" />
@@ -177,7 +177,7 @@ export default function home({ activeDiscipline, setActiveDiscipline, brandColor
                 <div>
                   <div className="flex items-center gap-2 mb-3">
                     <Flame size={18} style={{ color: brandColor }} />
-                    <h3 className="text-xl font-bold uppercase">Pista Hyrox & Cardio</h3>
+                    <h3 className="text-xl font-bold uppercase">Pista Freerox & Cardio</h3>
                   </div>
                   <p className="text-gray-400 text-xs md:text-sm leading-relaxed mb-6">
                     Trineos, SkiErgs, Assault Bikes y pista de césped artificial indoor específica para potencia y resistencia cardiovascular.

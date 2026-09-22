@@ -7,7 +7,7 @@ interface TarifasProps {
 }
 
 export default function tarifas({ activeDiscipline, setActiveDiscipline, brandColor }: TarifasProps) {
-  const isCrossfit = activeDiscipline === "Crossfit";
+  const isCrossfit = activeDiscipline === "CrossTraining";
 
   return (
     <div className="bg-[#121218] min-h-screen text-white">
@@ -35,20 +35,20 @@ export default function tarifas({ activeDiscipline, setActiveDiscipline, brandCo
           {/* SWITCH DE DISCIPLINA */}
           <div className="inline-flex items-center bg-black/60 backdrop-blur-md p-1.5 rounded-full border border-white/10 shadow-2xl">
             <button
-              onClick={() => setActiveDiscipline("Crossfit")}
+              onClick={() => setActiveDiscipline("CrossTraining")}
               className={`px-8 py-3 rounded-full font-black text-sm uppercase tracking-wider transition-all duration-300 ${
                 isCrossfit ? "bg-[#8A2BE2] text-white shadow-lg shadow-purple-500/30 scale-105" : "text-gray-400 hover:text-white"
               }`}
             >
-              CrossFit
+              CrossTraining
             </button>
             <button
-              onClick={() => setActiveDiscipline("Hyrox/Hiit")}
+              onClick={() => setActiveDiscipline("Freerox/Hiit")}
               className={`px-8 py-3 rounded-full font-black text-sm uppercase tracking-wider transition-all duration-300 ${
                 !isCrossfit ? "bg-[#2563EB] text-white shadow-lg shadow-blue-500/30 scale-105" : "text-gray-400 hover:text-white"
               }`}
             >
-              Hyrox / HIIT
+              Freerox / HIIT
             </button>
           </div>
         </div>

@@ -8,9 +8,9 @@ interface HorariosProps {
 }
 
 export default function Horarios({ brandColor, activeDiscipline, setActiveDiscipline }: HorariosProps) {
-  const isCrossfit = activeDiscipline === "Crossfit";
+  const isCrossfit = activeDiscipline === "CrossTraining";
 
-  // Datos de horarios para CrossFit
+  // Datos de horarios para CrossTraining
   const horariosCrossfit = [
     { dia: "Lunes", slots: ["7:00", "8:15", "9:30", "10:45 (Técnica)", "16:00", "17:15", "18:30", "19:45", "21:00"] },
     { dia: "Martes", slots: ["7:00", "9:30", "10:45", "16:00", "18:30", "19:45", "21:00"] },
@@ -20,7 +20,7 @@ export default function Horarios({ brandColor, activeDiscipline, setActiveDiscip
     { dia: "Sábados", slots: ["9:00", "10:00"] },
   ];
 
-  // Datos de horarios para Hyrox (Freerox)
+  // Datos de horarios para Freerox
   const horariosFreerox = [
     { dia: "Lunes", slots: ["9:30", "10:30", "19:00", "20:00", "21:00"] },
     { dia: "Martes", slots: ["8:30", "10:30", "11:30", "19:00", "20:00", "21:00"] },
@@ -66,15 +66,15 @@ export default function Horarios({ brandColor, activeDiscipline, setActiveDiscip
           {/* Selector de Disciplina Sincronizado */}
           <div className="inline-flex items-center bg-black/60 backdrop-blur-md p-1.5 rounded-full border border-white/10 shadow-2xl">
             <button
-              onClick={() => setActiveDiscipline("Crossfit")}
+              onClick={() => setActiveDiscipline("CrossTraining")}
               className={`px-8 py-3 rounded-full font-black text-sm uppercase tracking-wider transition-all duration-300 ${
                 isCrossfit ? "bg-[#8A2BE2] text-white shadow-lg shadow-purple-500/30 scale-105" : "text-gray-400 hover:text-white"
               }`}
             >
-              CrossFit
+              CrossTraining
             </button>
             <button
-              onClick={() => setActiveDiscipline("Hyrox/Hiit")}
+              onClick={() => setActiveDiscipline("Freerox/Hiit")}
               className={`px-8 py-3 rounded-full font-black text-sm uppercase tracking-wider transition-all duration-300 ${
                 !isCrossfit ? "bg-[#2563EB] text-white shadow-lg shadow-blue-500/30 scale-105" : "text-gray-400 hover:text-white"
               }`}
@@ -85,11 +85,9 @@ export default function Horarios({ brandColor, activeDiscipline, setActiveDiscip
         </div>
       </div>
 
-      {/* SECCIÓN DE CONTENIDO SOBRE EL FONDO NEGRO */}
+      {/* SECCIÓN DE CONTENIDO*/}
       <div className="max-w-5xl mx-auto px-6 pb-24 relative z-10">
-        {/* Renderizado de Horarios */}
         {isCrossfit ? (
-          /* Tarjetas de Horarios por Día (CrossFit) */
           <div className="grid gap-6 text-left">
             {horariosCrossfit.map((item, idx) => (
               <div 

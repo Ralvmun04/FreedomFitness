@@ -8,13 +8,13 @@ import Trabaja from "./pages/trabaja_con_nosotros";
 import Contacto from "./pages/contacto";
 import Privacidad from './pages/privacidad';
 
-export type Discipline = "Crossfit" | "Hyrox/Hiit";
+export type Discipline = "CrossTraining" | "Freerox/Hiit";
 
 export default function App() {
-  const [activeDiscipline, setActiveDiscipline] = useState<Discipline>("Crossfit");
+  const [activeDiscipline, setActiveDiscipline] = useState<Discipline>("CrossTraining");
   const [isOpen, setIsOpen] = useState(false); // Estado para controlar el menú móvil
 
-  const isCrossfit = activeDiscipline === "Crossfit";
+  const isCrossfit = activeDiscipline === "CrossTraining";
   const brandColor = isCrossfit ? "#8A2BE2" : "#2563EB";
 
   return (

@@ -79,7 +79,7 @@ export default function trabaja_con_nosotros({ brandColor }: TrabajaProps) {
 
             <div>
               <label className="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Certificaciones / Titulaciones</label>
-              <input type="text" name="titulaciones" placeholder="Ej: CrossFit Level 1, INEF, Halterofilia..." className="w-full bg-[#20202C] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none" required />
+              <input type="text" name="titulaciones" placeholder="Ej: CrossTraining Level 1, CAFYD, Halterofilia..." className="w-full bg-[#20202C] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none" required />
             </div>
 
             <div>
