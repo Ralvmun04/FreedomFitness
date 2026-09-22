@@ -83,6 +83,7 @@ export default function home({ activeDiscipline, setActiveDiscipline, brandColor
             src="/gimnasio.jpg" 
             alt="Freedom Interior" 
             className="w-full h-full object-cover object-center filter brightness-40 contrast-125 hover:opacity-95 transition-opacity"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0E0E12] via-[#0E0E12]/60 to-transparent" />
         </div>
@@ -145,6 +146,7 @@ export default function home({ activeDiscipline, setActiveDiscipline, brandColor
                   src="/instalaciones.jpg" 
                   alt="Sala Principal WOD" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#181822] to-transparent" />
               </div>
@@ -171,6 +173,8 @@ export default function home({ activeDiscipline, setActiveDiscipline, brandColor
                   src="/hiit.jpg" 
                   alt="Zona Freerox" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-90"
+                  loading="lazy"
+
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#181822] to-transparent" />
               </div>
@@ -197,6 +201,7 @@ export default function home({ activeDiscipline, setActiveDiscipline, brandColor
                   src="/ergs.jpg" 
                   alt="Zona Open Box" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter contrast-110"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#181822] to-transparent" />
               </div>
@@ -226,6 +231,7 @@ export default function home({ activeDiscipline, setActiveDiscipline, brandColor
                   src="/metros.jpg" 
                   alt="Instalaciones Freedom Box" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter contrast-110"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#181822] to-transparent" />
               </div>
@@ -252,6 +258,7 @@ export default function home({ activeDiscipline, setActiveDiscipline, brandColor
                   src="/descanso.jpg" 
                   alt="Freedom Rest Zone" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter contrast-110"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#181822] to-transparent" />
               </div>
