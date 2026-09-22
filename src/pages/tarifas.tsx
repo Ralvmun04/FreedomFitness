@@ -104,8 +104,8 @@ export default function tarifas({ activeDiscipline, setActiveDiscipline }: Tarif
             className="bg-[#181822] rounded-3xl p-8 transition-all duration-300 relative flex flex-col justify-between w-full md:w-[calc(33.333%-1.33rem)] shadow-2xl"
           >
             <div>
-              <h3 className="text-xl font-bold uppercase mb-2">"Full Open"</h3>
-              <p className="text-gray-400 text-sm mb-6">{isCrossfit ? "Disponibilidad total de toda la zona de open." : ""}</p>
+              <h3 className="text-xl font-bold uppercase mb-2">Full Open</h3>
+              <p className="text-gray-400 text-sm mb-6">Disponibilidad total de toda la zona de open.</p>
               <div className="text-4xl font-black mb-6">
                 55€ <span className="text-xs text-gray-500 font-normal">/ mes</span>
               </div>
