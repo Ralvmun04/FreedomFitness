@@ -87,14 +87,14 @@ export default function home({ activeDiscipline, setActiveDiscipline, brandColor
           <div className="absolute inset-0 bg-gradient-to-t from-[#0E0E12] via-[#0E0E12]/60 to-transparent" />
         </div>
 
-        <div className="relative z-10 max-w-4xl mx-auto text-center px-6 py-12 pointer-events-none">
-          <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tight mb-6 drop-shadow-2xl">
-            <span style={{ fontFamily: '"Pilot Command", sans-serif' }} className="text-6xl md:text-8xl tracking-wider uppercase">
+        <div className="relative z-10 max-w-4xl mx-auto text-center px-8 md:px-6 py-12 pointer-events-none">
+          <h1 className="text-5xl sm:text-6xl md:text-8xl font-black uppercase tracking-tight mb-6 drop-shadow-2xl">
+            <span style={{ fontFamily: '"Pilot Command", sans-serif' }} className="text-5xl sm:text-6xl md:text-8xl tracking-wider uppercase">
               Freedom
             </span>
           </h1>
-          <h1 className="text-6xl md:text-7xl font-black uppercase tracking-tight mb-6 drop-shadow-2xl">
-          <span style={{ fontFamily: '"orbitron", sans-serif', color: brandColor }} className="transition-colors duration-300">F i t n e s s</span>
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-light uppercase tracking-normal mb-6 drop-shadow-2xl">
+            <span style={{ fontFamily: '"orbitron", sans-serif', color: brandColor }} className="transition-colors duration-300">F i t n e s s</span>
           </h1>
 
           <div className="inline-flex items-center bg-black/60 backdrop-blur-md p-1.5 rounded-full border border-white/10 mb-8 shadow-2xl pointer-events-auto">
