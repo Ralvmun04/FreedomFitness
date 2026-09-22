@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Discipline } from "../App";
 import { X, Dumbbell, ShieldCheck, Flame, Coffee, ChevronLeft, ChevronRight } from "lucide-react";
 import emailjs from '@emailjs/browser';
+import { Link } from "react-router-dom";
 
 interface HomeProps {
   activeDiscipline: Discipline;
@@ -366,8 +367,7 @@ export default function home({ activeDiscipline, setActiveDiscipline, brandColor
                     className="mt-0.5 w-4 h-4 rounded bg-[#222230] border-white/20 cursor-pointer accent-[#8A2BE2]"
                   />
                   <span className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors leading-normal">
-                    He leído y acepto la <a href="/privacidad" target="_blank" className="underline hover:text-white">Política de Privacidad</a> y el tratamiento de mis datos por FREEDOM FITNESS, S.L.
-                  </span>
+                    He leído y acepto la <Link to="/privacidad" className="underline hover:text-white">Política de Privacidad</Link> y el tratamiento de mis datos por FREEDOM FITNESS, S.L.                  </span>
                 </label>
               </div>
 

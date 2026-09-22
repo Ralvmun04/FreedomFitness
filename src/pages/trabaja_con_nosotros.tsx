@@ -1,6 +1,7 @@
 import { Briefcase, FileText } from "lucide-react";
 import { useState } from "react";
 import emailjs from '@emailjs/browser';
+import { Link } from "react-router-dom";
 
 interface TrabajaProps {
   brandColor: string;
@@ -103,8 +104,7 @@ export default function trabaja_con_nosotros({ brandColor }: TrabajaProps) {
                 required
               />
               <label htmlFor="lopd-trabaja" className="text-xs text-gray-400 leading-normal cursor-pointer">
-                He leído y acepto la <a href="/privacidad" target="_blank" className="underline hover:text-white">Política de Privacidad</a> y el tratamiento de mis datos por FREEDOM FITNESS, S.L.
-              </label>
+                He leído y acepto la <Link to="/privacidad" className="underline hover:text-white">Política de Privacidad</Link> y el tratamiento de mis datos por FREEDOM FITNESS, S.L.              </label>
             </div>
 
             <button 
