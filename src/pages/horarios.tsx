@@ -23,9 +23,9 @@ export default function Horarios({ brandColor, activeDiscipline, setActiveDiscip
   // Datos de horarios para Freerox
   const horariosFreerox = [
     { dia: "Lunes", slots: ["9:30", "10:30", "19:00", "20:00", "21:00"] },
-    { dia: "Martes", slots: ["8:30", "10:30", "11:30", "19:00", "20:00", "21:00"] },
+    { dia: "Martes", slots: ["8:30", "10:30", "11:30","18:00", "19:00", "20:00", "21:00"] },
     { dia: "Miércoles", slots: ["8:30", "11:30", "19:00", "20:00", "21:00"] },
-    { dia: "Jueves", slots: ["8:30", "9:30", "10:30", "19:00", "20:00", "21:00"] },
+    { dia: "Jueves", slots: ["8:30", "9:30", "10:30", "18:00", "19:00", "20:00", "21:00"] },
     { dia: "Viernes", slots: ["10:30", "11:30", "19:00", "20:00"] },
     { dia: "Sábados", slots: ["9:00"] },
   ];
@@ -33,9 +33,9 @@ export default function Horarios({ brandColor, activeDiscipline, setActiveDiscip
   // Datos de horarios para HIIT
   const horariosHiit = [
     { dia: "Lunes", slots: ["11:30", "18:00"] },
-    { dia: "Martes", slots: ["9:30", "17:15","18:00"] },
+    { dia: "Martes", slots: ["9:30", "17:15"] },
     { dia: "Miércoles", slots: ["9:30", "10:30", "18:00"] },
-    { dia: "Jueves", slots: ["11:30", "17:15", "18:00"] },
+    { dia: "Jueves", slots: ["11:30", "17:15"] },
     { dia: "Viernes", slots: ["9:30", "18:00"] },
     { dia: "Sábados", slots: ["10:00"] },
   ];
