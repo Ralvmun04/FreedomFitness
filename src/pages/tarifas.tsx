@@ -64,8 +64,7 @@ export default function tarifas({ activeDiscipline, setActiveDiscipline, brandCo
           ].map((plan, idx) => (
             <div 
               key={idx}
-              className="bg-[#181822] rounded-3xl p-8 border-2 transition-all duration-300 relative flex flex-col justify-between shadow-2xl"
-              style={{ borderColor: brandColor }}
+              className="bg-[#181822] rounded-3xl p-8 transition-all duration-300 relative flex flex-col justify-between shadow-2xl"
             >
               <div>
                 <h3 className="text-xl font-bold uppercase mb-2">{plan.days}</h3>
@@ -80,8 +79,7 @@ export default function tarifas({ activeDiscipline, setActiveDiscipline, brandCo
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-8 mt-8">
           <div 
-            className="bg-[#181822] rounded-3xl p-8 border-2 transition-all duration-300 relative flex flex-col justify-between w-full md:w-[calc(33.333%-1.33rem)] shadow-2xl"
-            style={{ borderColor: brandColor }}
+            className="bg-[#181822] rounded-3xl p-8 transition-all duration-300 relative flex flex-col justify-between w-full md:w-[calc(33.333%-1.33rem)] shadow-2xl"
           >
             <div>
               <h3 className="text-xl font-bold uppercase mb-2">{isCrossfit ? "Ilimitado Full Box" : "5 Días / Semana"}</h3>
@@ -92,8 +90,7 @@ export default function tarifas({ activeDiscipline, setActiveDiscipline, brandCo
             </div>
           </div>
           <div 
-            className="bg-[#181822] rounded-3xl p-8 border-2 transition-all duration-300 relative flex flex-col justify-between w-full md:w-[calc(33.333%-1.33rem)] shadow-2xl"
-            style={{ borderColor: brandColor }}
+            className="bg-[#181822] rounded-3xl p-8 transition-all duration-300 relative flex flex-col justify-between w-full md:w-[calc(33.333%-1.33rem)] shadow-2xl"
           >
             <div>
               <h3 className="text-xl font-bold uppercase mb-2">{isCrossfit ? "Bonos de Clases" : "Full Week"}</h3>
