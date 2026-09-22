@@ -6,7 +6,7 @@ interface TarifasProps {
   brandColor: string;
 }
 
-export default function tarifas({ activeDiscipline, setActiveDiscipline, brandColor }: TarifasProps) {
+export default function tarifas({ activeDiscipline, setActiveDiscipline }: TarifasProps) {
   const isCrossfit = activeDiscipline === "CrossTraining";
 
   return (
@@ -54,7 +54,6 @@ export default function tarifas({ activeDiscipline, setActiveDiscipline, brandCo
         </div>
       </div>
 
-      {/* SECCIÓN DE TARJETAS DE TARIFAS SOBRE EL FONDO NEGRO */}
       <div className="max-w-7xl mx-auto px-6 pb-24 relative z-10">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {[
