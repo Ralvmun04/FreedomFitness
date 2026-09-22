@@ -46,7 +46,7 @@ export default function Horarios({ brandColor, activeDiscipline, setActiveDiscip
       <div className="relative min-h-[75vh] flex flex-col items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/horario.jpg" 
+            src="/horario.webp" 
             alt="Freedom Horarios" 
             className="w-full h-full object-cover object-center filter brightness-40 contrast-125"
           />

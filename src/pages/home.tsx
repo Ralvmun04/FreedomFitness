@@ -11,12 +11,12 @@ interface HomeProps {
 }
 
 const galleryImages = [
-  { src: "/gimnasio.jpg", alt: "Freedom Interior" },
-  { src: "/instalaciones.jpg", alt: "Sala Principal WOD" },
-  { src: "/hiit.jpg", alt: "Zona Freerox" },
-  { src: "/ergs.jpg", alt: "Zona Open Box" },
-  { src: "/metros.jpg", alt: "+1000 m² Indoor" },
-  { src: "/descanso.jpg", alt: "Freedom Rest Zone" },
+  { src: "/gimnasio.webp", alt: "Freedom Interior" },
+  { src: "/instalaciones.webp", alt: "Sala Principal WOD" },
+  { src: "/hiit.webp", alt: "Zona Freerox" },
+  { src: "/ergs.webp", alt: "Zona Open Box" },
+  { src: "/metros.webp", alt: "+1000 m² Indoor" },
+  { src: "/descanso.webp", alt: "Freedom Rest Zone" },
 ];
 
 export default function home({ activeDiscipline, setActiveDiscipline, brandColor }: HomeProps) {
@@ -80,7 +80,7 @@ export default function home({ activeDiscipline, setActiveDiscipline, brandColor
           onClick={() => setCurrentImageIndex(0)}
         >
           <img 
-            src="/gimnasio.jpg" 
+            src="/gimnasio.webp" 
             alt="Freedom Interior" 
             className="w-full h-full object-cover object-center filter brightness-40 contrast-125 hover:opacity-95 transition-opacity"
             fetchPriority="high"
@@ -143,7 +143,7 @@ export default function home({ activeDiscipline, setActiveDiscipline, brandColor
                 onClick={() => setCurrentImageIndex(1)}
               >
                 <img 
-                  src="/instalaciones.jpg" 
+                  src="/instalaciones.webp" 
                   alt="Sala Principal WOD" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
@@ -170,7 +170,7 @@ export default function home({ activeDiscipline, setActiveDiscipline, brandColor
                 onClick={() => setCurrentImageIndex(2)}
               >
                 <img 
-                  src="/hiit.jpg" 
+                  src="/hiit.webp" 
                   alt="Zona Freerox" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter brightness-90"
                   loading="lazy"
@@ -198,7 +198,7 @@ export default function home({ activeDiscipline, setActiveDiscipline, brandColor
                 onClick={() => setCurrentImageIndex(3)}
               >
                 <img 
-                  src="/ergs.jpg" 
+                  src="/ergs.webp" 
                   alt="Zona Open Box" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter contrast-110"
                   loading="lazy"
@@ -228,7 +228,7 @@ export default function home({ activeDiscipline, setActiveDiscipline, brandColor
                 onClick={() => setCurrentImageIndex(4)}
               >
                 <img 
-                  src="/metros.jpg" 
+                  src="/metros.webp" 
                   alt="Instalaciones Freedom Box" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter contrast-110"
                   loading="lazy"
@@ -255,7 +255,7 @@ export default function home({ activeDiscipline, setActiveDiscipline, brandColor
                 onClick={() => setCurrentImageIndex(5)}
               >
                 <img 
-                  src="/descanso.jpg" 
+                  src="/descanso.webp" 
                   alt="Freedom Rest Zone" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter contrast-110"
                   loading="lazy"

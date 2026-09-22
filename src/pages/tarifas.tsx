@@ -15,7 +15,7 @@ export default function tarifas({ activeDiscipline, setActiveDiscipline }: Tarif
       <div className="relative min-h-[75vh] flex flex-col items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/fondo-tarifas.jpg" 
+            src="/fondo-tarifas.webp" 
             alt="Freedom Tarifas" 
             className="w-full h-full object-cover object-center filter brightness-40 contrast-125"
           />

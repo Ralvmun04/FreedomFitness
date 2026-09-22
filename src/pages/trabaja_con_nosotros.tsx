@@ -41,7 +41,7 @@ export default function trabaja_con_nosotros({ brandColor }: TrabajaProps) {
   return (
     <div 
       className="py-24 min-h-screen flex items-center bg-cover bg-center relative"
-      style={{ backgroundImage: `url('/trabaja_con_nosotros.jpg')` }}
+      style={{ backgroundImage: `url('/trabaja_con_nosotros.webp')` }}
     >
       {/* Capa oscura superpuesta para asegurar la legibilidad del texto sobre la imagen */}
       <div className="absolute inset-0 bg-[#0E0E12]/85 backdrop-blur-sm"></div>
